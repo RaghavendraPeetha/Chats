@@ -1,0 +1,63 @@
+/* App.css */
+
+.home-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url("https://www.aiseesoft.com/images/resource/whatsapp-images/purple-wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-size: 2.5rem; /* Increased font size for emphasis */
+  color: #075e54;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold; /* Added font weight for better readability */
+}
+
+.logout-button {
+  margin-top: 30px;
+  background-color: #075e54;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increased padding for better touch target */
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem; /* Increased font size for emphasis */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.logout-button:hover {
+  background-color: #14a98e; /* Darker shade on hover */
+  transition: color 0.3s ease-in-out;
+}
+
+.conversations-link {
+  margin-top: 20px;
+}
+
+.link {
+  color: #daa30f;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.4rem; /* Increased font size for emphasis */
+  font-weight: bold; /* Added font weight for better readability */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.link:hover {
+  color: #044e41; /* Darker shade on hover */
+  text-decoration: underline; /* Remove underline on hover */
+}

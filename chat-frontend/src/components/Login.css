@@ -1,0 +1,70 @@
+/* Login.css */
+
+.login-form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  width: 100%; /* Adjusted width to accommodate padding and border */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  padding: 12px; /* Increased padding for better input area */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out; /* Smooth border transition */
+  box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch target */
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 15px; /* Increased margin for better spacing */
+  font-size: 14px; /* Slightly reduced font size for less prominence */
+  color: #666; /* Dimmed color for less emphasis */
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+  text-decoration: underline; /* Underline on hover */
+  transform: scale(0.95); /* Slightly reduce size on hover */
+}
+
+.success-message {
+  text-align: center;]
+  margin-top: 15px; /* Increased margin for better spacing */
+  color: green;
+  font-size: 14px; /* Slightly reduced font size for less prominence */
+}

@@ -1,0 +1,230 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conversations-list-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6c712f;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: white;
+  transition: all 0.6s ease;
+  max-width: 40px;
+  overflow: hidden;
+}
+
+.search-container-compressed {
+  justify-content: center; /* Center the icon */
+  background-color: #f8f9fa; /* Light grey background for compressed state */
+  padding: 7px; /* Padding to ensure the icon is centered */
+}
+
+.search-container-expanded {
+  max-width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-style: oblique;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.search-input::placeholder {
+  color: #aaaaaa;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.suggestions-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.suggestions-list {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: -1px;
+  transition: max-height 0.3s ease;
+  list-style-type: none;
+  padding: 0;
+}
+
+.suggestions-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.suggestions-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-style: oblique;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f2f5;
+  transform: translateY(1px);
+}
+
+.no-results-message {
+  font-style: oblique;
+  font-size: 0.7rem;
+  padding: 10px;
+  color: #888;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.available-conversation {
+  background-color: #e6ffe6;
+  border: 1px solid #00cc00;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #006600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.available-conversation h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.available-conversation p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.conversation-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.conversation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border-bottom: 1px solid #f0f2f5;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.conversation-link {
+  padding: 8px;
+  margin: 3px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(236, 241, 103);
+  flex: 1;
+  color: #55ceceef;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.conversation-link:hover {
+  color: hsl(211, 44%, 33%);
+  text-decoration: none;
+  transform: scale(1.012);
+}
+
+.delete-button {
+  padding: 8px;
+  margin: 3px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(236, 241, 103);
+  cursor: pointer;
+  color: #ff6666;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.delete-button:hover {
+  color: #cc0000;
+  transform: scale(1.02);
+}
+
+.delete-button i {
+  font-size: 16px;
+}
+
+.no-conversations-message {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+  font-style: oblique;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .conversations-list-container {
+    padding: 10px;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+}

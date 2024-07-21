@@ -1,0 +1,107 @@
+/* ChatWindow.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(data:image/jpeg;base64,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);
+  background-attachment: fixed;
+}
+
+.chat-title {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Example background color */
+  border-bottom: 1.5px solid #ccc; /* Example border */
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: 'Arial', sans-serif; /* Example font family */
+}
+
+.chat-title h1 {
+  font-size: 18px; /* Example font size for main title */
+  font-weight: bold;
+  color: #333; /* Example font color */
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Example font family */
+}
+
+.chat-title .alias {
+  font-size: 14px; /* Example font size for alias */
+  color: #666; /* Example color for alias */
+  margin-left: 5px; /* Example margin between main title and alias */
+  font-family: 'Arial', sans-serif; /* Example font family */
+}
+
+
+
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message-list-container {
+  flex: 1; /* Ensure message list container stretches */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.form-container {
+  background-color: #24bd7d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+.form-row {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; /* Ensure form row takes full width */
+}
+
+.image-upload-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.image-input {
+  display: none; /* Hide the actual input */
+}
+
+.icon_file {
+  font-size: 1.2rem;
+  margin-right: 5px; /* Adds spacing between icon and input */
+}
+
+.send-button {
+  background-color: #075e54;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
